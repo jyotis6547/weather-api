@@ -1,0 +1,1023 @@
+
+
+<div class="row g-5 g-xl-8 dashboard-box justify-content-center">
+	<ng-container *ngIf="api.userid.role_center[0].user_role.code=='Initiator' || token_detail.process_id==3">
+    <!-- <div class="col-md-3 gridbg1">
+     
+      <a routerLink="/tasking-portal/new-task" class="card bg-danger hoverable card-xl-stretch mb-xl-8 p-3 card-bg-1" style="height: 150px;">
+        
+        <div class="card-body">
+        
+          <div class="row">
+            <div class="col-md-4">
+              <span class="svg-icon svg-icon-gray-100 svg-icon-4x ms-n1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none">
+                  <path opacity="0.3"
+                    d="M18 21.6C16.3 21.6 15 20.3 15 18.6V2.50001C15 2.20001 14.6 1.99996 14.3 2.19996L13 3.59999L11.7 2.3C11.3 1.9 10.7 1.9 10.3 2.3L9 3.59999L7.70001 2.3C7.30001 1.9 6.69999 1.9 6.29999 2.3L5 3.59999L3.70001 2.3C3.50001 2.1 3 2.20001 3 3.50001V18.6C3 20.3 4.3 21.6 6 21.6H18Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M12 12.6H11C10.4 12.6 10 12.2 10 11.6C10 11 10.4 10.6 11 10.6H12C12.6 10.6 13 11 13 11.6C13 12.2 12.6 12.6 12 12.6ZM9 11.6C9 11 8.6 10.6 8 10.6H6C5.4 10.6 5 11 5 11.6C5 12.2 5.4 12.6 6 12.6H8C8.6 12.6 9 12.2 9 11.6ZM9 7.59998C9 6.99998 8.6 6.59998 8 6.59998H6C5.4 6.59998 5 6.99998 5 7.59998C5 8.19998 5.4 8.59998 6 8.59998H8C8.6 8.59998 9 8.19998 9 7.59998ZM13 7.59998C13 6.99998 12.6 6.59998 12 6.59998H11C10.4 6.59998 10 6.99998 10 7.59998C10 8.19998 10.4 8.59998 11 8.59998H12C12.6 8.59998 13 8.19998 13 7.59998ZM13 15.6C13 15 12.6 14.6 12 14.6H10C9.4 14.6 9 15 9 15.6C9 16.2 9.4 16.6 10 16.6H12C12.6 16.6 13 16.2 13 15.6Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M15 18.6C15 20.3 16.3 21.6 18 21.6C19.7 21.6 21 20.3 21 18.6V12.5C21 12.2 20.6 12 20.3 12.2L19 13.6L17.7 12.3C17.3 11.9 16.7 11.9 16.3 12.3L15 13.6V18.6Z"
+                    fill="currentColor"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="col-md-8">
+              
+              <h4 class="text-white" style="text-align: right;">Start a New Tasking</h4>
+            </div>
+          </div>
+        </div>
+       
+      </a>
+     
+    </div> -->
+    <a routerLink="/tasking-portal/new-task" class="card  card-xl-stretch mb-5 mb-xl-8 p-3 card-bg-2" style="height: 140px;">
+    <div class="d-flex align-items-center justify-content-between">
+      <div>
+        <h3 class="text-black mb-2">New Task</h3>
+        <button class="btn btn-view ">View</button>
+      </div>
+      <div class="me-3">
+        <img src="../.../../../../../assets/.../.../../../14.png" alt="Archive" style=" height: 54px;" />
+      </div>
+    </div>
+  </a>
+
+
+	</ng-container>
+
+  
+
+         <a routerLink="/tasking-portal/archive-task" class="card  card-xl-stretch mb-5 mb-xl-8 p-3 card-bg-2" style="height: 140px;">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <h3 class="text-black mb-2">Archive Task</h3>
+              <button class="btn btn-view ">View</button>
+            </div>
+            <div class="me-3">
+              <img src="../../../../assets/archieve task.png" alt="Archive" style=" height: 54px;" />
+            </div>
+          </div>
+        </a>
+        
+         
+
+        <a routerLink="/tasking-portal/task-list" class="card  card-xl-stretch mb-5 mb-xl-8 p-3 card-bg-2" style="height: 140px;">
+          <div class="d-flex align-items-center justify-content-between">
+            <div>
+              <h3 class="text-black mb-2">Task Waiting For Approval</h3>
+              <button class="btn btn-view ">View</button>
+            </div>
+            <div class="me-3">
+              <img src="../../../../assets/../assets/.../../task waiting for approve.png" alt="Archive" style=" height: 54px;" />
+            </div>
+          </div>
+        </a>
+      
+
+
+        <a routerLink="/tasking-portal/view-tasking-status" class="card card-xl-stretch mb-5 mb-xl-8 p-3 card-bg-4" style="height: 140px;">
+          <div class="card-content">
+            
+            <div class="text">
+              <h3 class="text-black mb-2">Total Approved Task</h3>
+              <button class="btn btn-view">View</button>
+            </div>
+           
+            <div class="icon">
+              <img src="../../../../assets/.../../total approved task.png" alt="Icon" style="height: 50px;">
+            </div>
+          </div>
+        </a> 
+        
+        
+
+
+        <div class="card-body responsive" layout-xs="columns">
+
+            <!-- <div id="chartdiv" style="width: 100%; height: 450px"></div> -->
+            <ngb-accordion class="accordion2" [closeOthers]="true" activeIds="static-b3">
+              <ngb-panel id="static-b3" title="Details of Tasks">
+                <ng-template ngbPanelContent>
+                  <div class="card-body mt-n10">
+                    <div id="chartChartDetailModule" style="width: 100%; height: 450px"></div>        
+                  </div>
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+
+        </div>
+        <!--end::Body-->
+    </div>
+<!-- </div> -->
+
+  <div class="col-xl-12 mb-xl-12 mt-0">
+    <div class="card card-flush h-xl-100 progress-chart mapbg">
+        <!--begin::Heading-->
+        <div class="card-header">
+            <!--begin::Title-->
+            <h3 class="card-title align-items-start flex-column pt-5">
+                <span class="fw-bold mb-3">Percentage Completion of Tasks</span>
+
+            </h3>
+            <!--end::Title-->
+
+        </div>
+        <!--end::Heading-->
+        <!--begin::Body-->
+        <div class="card-body responsive" layout-xs="columns">
+
+            <!-- <div id="chartdiv" style="width: 100%; height: 450px"></div> -->
+            <ngb-accordion class="accordion2" [closeOthers]="true" activeIds="static-b3">
+              <ngb-panel id="static-b3" title="Percentage Completion of Tasks">
+                <ng-template ngbPanelContent>
+                  <div class="card-body mt-n10">
+                    <div id="chartTaskCompletionModule" style="width: 100%; height: 450px"></div>        
+                  </div>
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+
+        </div>
+        <!--end::Body-->
+    </div>
+</div>
+
+
+  <div class="col-xl-12 mb-xl-12 mt-0">
+    <div class="card card-flush h-xl-100 progress-chart mapbg">
+        <!--begin::Heading-->
+        <div class="card-header">
+            <!--begin::Title-->
+            <h3 class="card-title align-items-start flex-column pt-5">
+                <span class="fw-bold mb-3">Milestone Tasks</span>
+
+            </h3>
+            <!--end::Title-->
+
+        </div>
+        <!--end::Heading-->
+        <!--begin::Body-->
+        <div class="card-body responsive" layout-xs="columns">
+
+            <!-- <div id="chartdiv" style="width: 100%; height: 450px"></div> -->
+            <div id="chart1" >
+              <apx-chart
+                [series]="chartOptions1.series"
+                [chart]="chartOptions1.chart"
+                [fill]="chartOptions1.fill"
+                [stroke]="chartOptions1.stroke"
+                [legend]="chartOptions1.legend"
+                [plotOptions]="chartOptions1.plotOptions"
+                [grid]="chartOptions1.grid"
+                [xaxis]="chartOptions1.xaxis"
+                [markers]="chartOptions1.markers"
+
+
+              ></apx-chart>
+            </div>
+
+        </div>
+        <!--end::Body-->
+    </div>
+</div>
+
+<!-- </div> -->
+
+
+<div class="row g-5 map-card g-xl-8">
+	<div class="col-md-12">
+		<div class="card p-0" style="margin-bottom: 60px;">
+
+        <!-- begin::Header -->
+
+<div class="card-header">
+    <h3 class="card-title align-items-start flex-column pt-10">
+      <span class="fw-bold mb-3"> Monitor task progress </span>
+      <!-- <span class="text-muted mt-1 fw-bold fs-7">Over 500 new products</span> -->
+    </h3>
+
+     </div>
+
+  <!-- end::Header -->
+  <!-- begin::Body -->
+
+  <div class="card-body py-3">
+    <!-- begin::Table container -->
+    <div class="container table-options">
+      <div class="row">
+      <div class="col-md-6">
+        <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[10,20,30,50,100]"
+        aria-label="Select page">
+        </mat-paginator>
+      </div>
+      <div class="col-md-6">
+        <mat-form-field appearance="standard">
+        <mat-label>Search your text here</mat-label>
+        <input matInput (keyup)="applyFilter($event)" class="search-mat-table" #input>
+        </mat-form-field>
+      </div>
+      </div>
+    </div>
+    <table mat-table [dataSource]="dataSource" class="table table-striped table-row-bordered gy-5 gs-7 border rounded">
+      <!-- <pre>{{dataSource?dataSource.length:'' }}</pre> -->
+      <ng-container matColumnDef="task_number_dee">
+        <th mat-header-cell *matHeaderCellDef width="15%"><b> Task Number</b></th>
+        <td mat-cell *matCellDef="let data"> {{data.task_number_dee}} </td>
+      </ng-container>
+      <ng-container matColumnDef="task_name">
+        <th mat-header-cell *matHeaderCellDef width="30%"><b>Task Name </b></th>
+        <td mat-cell *matCellDef="let data"> {{data.task_name}} </td>
+        <!-- <td mat-cell *matCellDef="let data"> <div [innerHTML]="data.task_description"></div> </td> -->
+        <!-- <span  [innerHTML]="{{data.task_description}}"</span> -->
+      </ng-container>
+      <ng-container matColumnDef="due_date">
+        <th mat-header-cell *matHeaderCellDef><b>Due Date </b></th>
+        <td mat-cell *matCellDef="let data"> 
+          {{data.time_frame_for_completion_month?data.time_frame_for_completion_month+" Month's ":''}} {{data.time_frame_for_completion_days?data.time_frame_for_completion_days+" Day's":''}}
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="assignee">
+        <th mat-header-cell *matHeaderCellDef><b>Assignee </b></th>
+        <td mat-cell *matCellDef="let data"> {{data&&data.assigned_tasking_group?data.assigned_tasking_group[0].tasking_group.name:'-'}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="time_frame_for_completion">
+        <th mat-header-cell *matHeaderCellDef><b>Time for Completion </b></th>
+        <td mat-cell *matCellDef="let data"> {{data.time_frame_for_completion}} </td>
+      </ng-container>
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef><b> Status </b></th>
+        <td mat-cell *matCellDef="let data"> <a href="javascript:void(0)"
+          class="status-field {{data.status=='1'?'text-success':'text-danger'}}">{{data.status=='1'?'Active':'Inactive'}}</a>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="noData">
+        <th mat-footer-cell *matFooterCellDef [attr.colspan]="displayedColumns.length" class="norecord">
+            No Records Found!
+        </th >
+        </ng-container>
+      <ng-container matColumnDef="Action">
+        
+        <th class="text-center" mat-header-cell *matHeaderCellDef><ng-container><b>Action</b></ng-container></th>
+        <!-- <ng-container *ngIf="this.token_detail.process_id==3"> -->
+        <td class="text-center action-icon-1" mat-cell *matCellDef="let data" >
+        <a
+              (click)="openview(data.id)"  class="
+              btn btn-icon bi bi-eye-fill btn-bg-light btn-active-color-primary btn-sm
+              "
+
+				  placement="end" tooltipClass="dark-theme" ngbTooltip="View Status"
+              >
+               <!-- <i class="bi bi-eye-fill"></i> -->
+              </a>
+              <a
+              (click)="openEdit(data)"
+                class="
+				btn btn-icon bi bi-eye btn-bg-light btn-active-color-primary btn-sm
+				
+                " placement="end" tooltipClass="dark-theme" ngbTooltip="Tasking approval details"
+
+              >
+
+                <!-- <span
+                  [inlineSVG]="'./assets/media/icons/duotune/art/art005.svg'"
+                  class="svg-icon svg-icon-3"
+                ></span> -->
+              </a>
+			  <ng-container *ngIf="api.userid.process_id==3">
+              <a
+              (click)="openPopup(data.id)"
+                class="btn btn-icon bi bi-flag-fill btn-bg-light btn-active-color-primary btn-sm"
+				placement="end" tooltipClass="dark-theme" ngbTooltip="Add MileStone"
+              >
+                <!-- <i  class="bi bi-flag-fill" style="color: rgb"></i> -->
+              </a>
+			</ng-container>
+              <a (click)="openlistitem(data.id)"
+                class="btn btn-icon bi bi-journal btn-bg-light btn-active-color-primary btn-sm"
+				placement="end" tooltipClass="dark-theme" ngbTooltip="View MileStone"
+              >
+                <!-- <i  class="bi bi-flag-fill" style="color: rgb"></i> -->
+              </a>
+        </td>
+        <!-- </ng-container> -->
+    </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSource && dataSource.data.length > 0"></tr>
+        <tr class="mat-row" *matNoDataRow>
+          <td *ngIf='filterValue' class="norecord"  colspan="4"><b>No data matching with records</b></td>
+       </tr>
+      </table>
+    <!-- end::Table container -->
+  </div>
+  <!-- begin::Body -->
+</div>
+	</div>
+
+</div>
+
+
+<ng-template #template let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title">Delete Task</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+	</div>
+	<div class="modal-body">
+
+		<p><strong>Do you want to Delete the Task? </strong></p>
+
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-success" >Yes</button>
+
+		<button type="button" class="btn btn-danger" (click)="modal.close('Close click')">No</button>
+	</div>
+
+</ng-template>
+
+
+	 <!--begin::Body-->
+	 <div class="modal fade master-modal-style" id="crud-milestone" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+
+     <!-- <div class="modal fade" id="crud-milestone" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false"> -->
+
+    <div class="modal-dialog modal-xl">
+
+		   <div class="modal-content">
+			  <div class="modal-header">
+				 <h5 class="modal-title" id="exampleModalLabel">Add Milestone</h5>
+
+         <button type="button" (click)="close()" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="false">&times;</span>
+          </button>
+
+         <!-- <button type="button" aria-label="Close"  (click)="cancelmodal()">
+           <button  >Close Dialog -->
+          <!-- <span aria-hidden="true">&times;</span> -->
+          <!-- </button> -->
+
+			  </div>
+		  <div class="modal-body form-style-md form-style-font linux">
+		  <div id="hide_alert" class="alert alert-danger form-error-message my-4" *ngIf="error_msg==true">{{ErrorMsg}}
+		  </div>
+
+
+		  <div class="modal-body p-0" style="padding-top:25px; padding-bottom:0%" >
+
+			<div class="row g-6 g-xl-9 ">
+				<div class="col-md-3" style="border-right: 1px solid #e4e6ef;">
+				<form  [formGroup]="MileStoneForm" (ngSubmit)="OnMileStoneSubmit()" >
+					<div class="row mb-5">
+            <!-- <div class="col-md-12 fv-row"> -->
+              <div class="matt-group matselect">
+							<!--begin::Label-->
+							<label class="required fs-5 fw-bold mb-2">View Status</label>
+							<!-- <input type="text" class="form-control form-control-solid" formControlName="tasking_status" > -->
+              <mat-form-field appearance="fill"  class="form-control"  >
+                <mat-select #select formControlName="tasking_status">
+                  <ng-container >
+                  <mat-option *ngFor="let occ of viewstatus " [value]="occ.id">{{occ.title}} ({{occ.start_date}} to {{occ.end_date}})</mat-option>
+                </ng-container>
+                <!-- <ng-container *ngFor="let occ of lookup">
+                  <mat-option *ngIf="occ.type.code=='TGT'" [value]="occ.name">{{occ.name}}</mat-option>
+                </ng-container> -->
+                </mat-select>
+
+              </mat-form-field>
+
+
+						</div>
+						<!--begin::Col-->
+						<div class="col-md-12 fv-row">
+							<!--begin::Label-->
+							<label class="required fs-5 fw-bold mb-2">Milestone</label>
+							<input type="text" class="form-control form-control-solid" formControlName="milestone" >
+
+
+						</div>
+
+						<!--end::Col-->
+
+					</div>
+
+
+          <!-- <div class="row"> -->
+            <!--begin::Col-->
+           <div class="col-md-6 fv-row">
+                <label class=" fs-5 fw-bold mb-2">Start Date</label>
+                <!--end::Label-->
+                <!-- <input
+                class="form-control"
+                placeholder="dd-mm-yyyy"
+                formControlName="start_date"
+                ngbDatepicker
+                #d="ngbDatepicker"
+                (click)="d.toggle()" -->
+                <mat-form-field appearance="fill">
+                    <input matInput [matDatepicker]="picker_date" class="form-control form-control-solid" formControlName="task_start_date" onclick="$('#start_date').trigger('click'); return false;"  placeholder="MM/DD/YYYY" [(ngModel)]="task_start_date">
+                    <mat-datepicker-toggle matSuffix [for]="picker_date" id="start_date"></mat-datepicker-toggle>
+                    <mat-datepicker #picker_date></mat-datepicker>
+                </mat-form-field>
+
+
+            </div>
+            <br>
+
+            <div class="col-md-6 fv-row">
+                <label class=" fs-5 fw-bold mb-2">End Date</label>
+                <!--end::Label-->
+                <mat-form-field appearance="fill">
+                <input matInput [matDatepicker]="picker_date2" class="form-control form-control-solid" formControlName="task_end_date" onclick="$('#end_date').trigger('click'); return false;"  placeholder="MM/DD/YYYY" [(ngModel)]="task_end_date">
+                <mat-datepicker-toggle matSuffix [for]="picker_date2" id="end_date"></mat-datepicker-toggle>
+                <mat-datepicker #picker_date2></mat-datepicker>
+            </mat-form-field>
+
+            </div>
+
+        <!-- </div> -->
+
+					<div class="row mb-5">
+						<div class="col-md-12 fv-row">
+							<!--begin::Label-->
+							<label class="required fs-5 fw-bold mb-2"> Percentage Completion</label>
+							<input type="text" class="form-control form-control-solid" formControlName="percentage_completion" >
+
+
+						</div>
+						<!--begin::Col-->
+
+					</div>
+
+					<div class="row mb-5">
+						<!--begin::Col-->
+						<div class="col-md-12 fv-row">
+							<!--begin::Label-->
+							<label class="required fs-5 fw-bold mb-2">Budget Utilized</label>
+							<input type="text" class="form-control form-control-solid" formControlName="budget_utilized" >
+
+
+						</div>
+
+						<!--end::Col-->
+
+					</div>
+					<div class="row mb-5">
+						<!--begin::Col-->
+						<div class="col-md-12 fv-row">
+							<!--begin::Label-->
+							<label class="required fs-5 fw-bold mb-2">Man Power</label>
+							<input type="text" class="form-control form-control-solid" formControlName="manpower" >
+
+
+						</div>
+
+						<!--end::Col-->
+
+					</div>
+					<div class="row button-group-lg button-auto mt-4">
+						<div class="col-md-4 col-4">
+              <button type="submit" id="kt_sign_in_submit" *ngIf="!isReadonly" class="btn btn-primary"
+              style="float:right;">
+              Save
+           </button>
+						  <!-- <button type="submit" class="btn btn-primary" *ngIf="!isReadonly">{{crudName}}</button> -->
+						  </div>
+						  <div class="col-md-4 col-4">
+						  <button type="button" class="btn btn-outline-primary" #closebutton data-dismiss="modal" (click)="cancelmodal()" id="" >Cancel</button>
+						 </div>
+
+					  </div>
+
+
+					<!--end::Submit-->
+				</form>
+			</div>
+
+			<div class="col-md-9">
+
+				<div class="table-responsive"  >
+
+					<!--begin::Table-->
+					<table mat-table [dataSource]="dataSourcelist" class="table table-striped table-row-bordered gy-5 gs-7 border rounded" >
+            <ng-container matColumnDef="tasking_status">
+              <th mat-header-cell *matHeaderCellDef><b>View Status</b></th>
+              <td mat-cell *matCellDef="let milestone"> {{milestone.tasking_status && milestone.tasking_status.title?milestone.tasking_status.title:''}} </td>
+           </ng-container>
+            <ng-container matColumnDef="milestone">
+               <th mat-header-cell *matHeaderCellDef><b> Milestone </b></th>
+               <td mat-cell *matCellDef="let milestone"> {{milestone.milestone}} </td>
+            </ng-container>
+            <ng-container matColumnDef="percentage_completion">
+               <th mat-header-cell *matHeaderCellDef><b> Percentage Completion </b></th>
+               <td mat-cell *matCellDef="let milestone"> {{milestone.percentage_completion}} </td>
+            </ng-container>
+            <ng-container matColumnDef="budget_utilized">
+               <th mat-header-cell *matHeaderCellDef><b> Budget Utilised </b></th>
+               <td mat-cell *matCellDef="let milestone"> {{milestone.budget_utilized}} </td>
+            </ng-container>
+            <ng-container matColumnDef="manpower">
+              <!-- <div> <span [item]="currentItem"></span></div>   -->
+              <!-- <div>
+                <app-dashboard1 [myinputMsg]=""></app-dashboard1>
+                </div>
+                 -->
+
+              <th mat-header-cell *matHeaderCellDef><b> Manpower </b></th>
+              <td mat-cell *matCellDef="let milestone"> {{milestone.manpower}} </td>
+           </ng-container>
+           <ng-container matColumnDef="task_start_date">
+            <th mat-header-cell *matHeaderCellDef><b> Start Date </b></th>
+            <td mat-cell *matCellDef="let milestone"> {{milestone.task_start_date}} </td>
+         </ng-container>
+         <ng-container matColumnDef="task_end_date">
+          <th mat-header-cell *matHeaderCellDef><b> End Date </b></th>
+          <td mat-cell *matCellDef="let milestone"> {{milestone.task_end_date}} </td>
+
+          </ng-container>
+
+          <ng-container matColumnDef="edit" >
+            <th class="text-center" mat-header-cell *matHeaderCellDef ><ng-container><b>Edit</b></ng-container></th>
+            <td class="text-center" mat-cell *matCellDef="let milestone">
+               <a href="javascript:void(0)" data-toggle="modal" data-target="#crud-milestone" class="edit-icon text-primary" placement="end" tooltipClass="dark-theme" ngbTooltip=Edit (click)="editOption(milestone)" ><span class="bi bi-pencil" ></span></a></td>
+         </ng-container>
+         <ng-container matColumnDef="delete">
+          <th class="text-center" mat-header-cell *matHeaderCellDef ><ng-container ><b>Delete</b></ng-container></th>
+          <td class="text-center" mat-cell *matCellDef="let milestone"><a href="javascript:void(0)" class="edit-icon text-danger" placement="end" tooltipClass="dark-theme" ngbTooltip=Delete (click)="onDelete(milestone.id)"><span class="bi bi-trash"></span></a></td>
+       </ng-container>
+
+             <!-- <ng-container matColumnDef="noData">
+               <th mat-footer-cell *matFooterCellDef [attr.colspan]="displayedColumnslist.length" class="norecord">
+       </ng-container>
+
+            <ng-container matColumnDef="noData">
+               <th mat-footer-cell *matFooterCellDef [attr.colspan]="displayedColumns.length" class="norecord">
+
+                   No Records Found!
+               </th >
+              </ng-container>  -->
+             <tr mat-header-row *matHeaderRowDef="displayedColumnslist"></tr>
+             <tr mat-row *matRowDef="let row; columns: displayedColumnslist;"></tr>
+             <!-- <tr mat-footer-row *matFooterRowDef="['noData']" [hidden]="dataSourcelist && dataSourcelist.data.length > 0"></tr> -->
+             <!-- <tr class="mat-row" *matNoDataRow>
+               <td *ngIf='filterValue' class="norecord"  colspan="4"><b>No data matching with "{{input.value}}"</b></td>
+            </tr>  -->
+         </table>
+					<!--end::Table-->
+				</div>
+			</div>
+			</div>
+		</div>
+
+
+
+     <!-- <div class="card-footer text-end">
+       <div class="col-md-12">
+       <button type="submit" class="btn btn-primary" *ngIf="!isReadonly" >{{crudName}}</button>
+
+      </div>
+     </div> -->
+
+   </div>        </div>
+  </div>
+ </div>
+
+
+
+
+
+
+<div class="modal fade master-modal-style" id="crud-countries" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">{{crudName}} Tasking</h5>
+           <button type="button" (click)="cancelmodal()" class="btn-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="false">&times;</span>
+            </button>
+        </div>
+    <div class="modal-body form-style-md form-style-font linux">
+    <div id="hide_alert" class="alert alert-danger form-error-message my-4" *ngIf="error_msg==true">{{ErrorMsg}}
+    </div>
+    <form [formGroup]="this.taskForm" (ngSubmit)="onSubmit()">
+       <div class="row">
+       <!--begin::Input group-->
+       <!-- <mat-label style="text-align:center;"><b style="font-size:large;" >SPONSORING DIRECTORATE</b></mat-label> -->
+       &nbsp;
+       <div formGroupName="sdForm">
+       <!-- <ng-container *ngIf="api.userid.role_center[0].user_role.code=='Initiator'"> -->
+       <div class="alert alert-dismissible alert-bg">
+
+         <div class="mb-5 ">
+           <div class="row">
+             <div class="col-md-6">
+              <div class="matt-group">
+                <mat-label style="font-size:large;">Sponsoring Directorate <b class="star">*</b></mat-label>
+     
+                  <!-- <span matPrefix>IHQ MOD(N)/&nbsp;</span> -->
+                 <!-- <input matInput placeholder="" formControlName="sponsoring_directorate" maxlength="100"
+                 > -->
+                 <!-- <span>IHQ MOD(N)/{{api.userid.first_name}}{{api.userid.last_name}}</span> -->
+                 <input type="text" class="form-control" formControlName="sponsoring_directorate" maxlength="100" />
+                 <br>
+									<input type="text" class="form-control" *ngIf="showSD" formControlName="SD_comments"/>
+               </div>
+             </div>
+             <div class="col-md-6">
+							<div class="matt-group">
+								<mat-label style="font-size:large;"><b>Task Name</b></mat-label>
+								<input type="text" class="form-control" formControlName="task_name"/>					
+							</div>
+						</div>
+
+           </div>
+         
+       </div>
+       <!-- <div class="mb-5">
+        <div class="row">
+          <div class="col-md-6">
+          <div class="matt-group">
+            <mat-label style="font-size:large;"><b>Details of hardware</b></mat-label>
+            <input type="text" class="form-control" formControlName="details_hardware"/>					
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="matt-group">
+              <mat-label style="font-size:large;"><b>Details of software</b></mat-label>
+              <input type="text" class="form-control" formControlName="details_software"/>					
+            </div>
+          </div>
+        </div>					  
+      </div>
+      <div class="mb-5">
+        <div class="row">
+          <div class="col-md-6">
+          <div class="matt-group">
+            <mat-label style="font-size:large;"><b>Details of systems to be modified through present tasking</b></mat-label>
+            <input type="text" class="form-control" formControlName="details_systems_present"/>					
+          </div>
+          </div>
+          <div class="col-md-6">
+            <div class="matt-group">
+              <mat-label style="font-size:large;"><b>Ships / systems likely to be affected</b></mat-label>
+              <input type="text" class="form-control" formControlName="ships_or_systems_affected"/>					
+            </div>
+          </div>
+        </div>					  
+      </div> -->
+
+       <div class="mb-5">
+         <mat-label style="font-size:large;">Task Description (Only 200 words)<b class="star">*</b></mat-label>
+
+
+         <!-- <ckeditor formControlName="task_description" class="form-control" [readOnly]="true"></ckeditor> -->
+         <!-- <mat-error *ngIf="sdError('task_description','required') && showError">Enter Task Description</mat-error> -->
+         <angular-editor formControlName="task_description"  [config]="editorConfig"></angular-editor>
+
+
+       </div>
+       <!-- <a href="{{ImageUrl}}">{{ImageUrl}}</a> -->
+                
+        
+           <!-- <mat-error *ngIf="sdError('file','required') && showError">Select File</mat-error> -->
+           <!-- <a href="{{ImageUrl}}">{{ImageUrl}}</a> -->
+           <div class="mb-5">
+
+					  <div class="matt-group">					
+            <mat-label style="font-size:large;">File  (Maximum 20MB Allowed)<b class="star">*</b></mat-label>
+						<a href="{{ImageUrl}}" *ngIf="ImageUrl!=''" class="edit-icon text-primary"
+					><span class="material-icons-outlined"><span class="bi bi-journal-check" style="font-size:2rem;color: #4caf50;"></span></span></a>
+					 
+				
+					  <a href="{{ImageUrl1}}" *ngIf="ImageUrl1!=''" class="edit-icon text-primary"
+				  ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="font-size:2rem;color: #4caf50;"></span></span></a>
+			
+
+					  <a href="{{ImageUrl2}}" *ngIf="ImageUrl2!=''" class="edit-icon text-primary"
+				  ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="font-size:2rem;color: #4caf50;"></span></span></a>
+			
+
+					  <a href="{{ImageUrl3}}" *ngIf="ImageUrl3!=''" class="edit-icon text-primary"
+				  ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="font-size:2rem;color: #4caf50;"></span></span></a>
+					
+					
+					  <a href="{{ImageUrl4}}" *ngIf="ImageUrl4!=''" class="edit-icon text-primary"
+				  ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="font-size:2rem;color: #4caf50;"></span></span></a>
+					</div>
+				</div>
+        
+       </div>
+
+
+     <!-- </ng-container> -->
+     </div>
+
+     <div formGroupName="apsoForm" >
+      <!-- <ng-container *ngIf="api.userid.role_center[0].user_role.code=='ACOM'"> -->
+       
+          <!-- <mat-label  style="text-align:center;"><b style="font-size:large;">ACOM (IT & S)  (Asst.Chief of Materiel(Information Technology & Sys))</b></mat-label> -->
+          <div class="alert alert-dismissible alert-bg">
+            <div class="sub-heading" style="text-align:center;">
+              <mat-label class="subheading3"><b style="font-size:large;">APSO11</b></mat-label>
+            </div>
+          <div class="mb-5 ">
+          <mat-label style="font-size:large;" >Comments<b class="star">*</b></mat-label>
+   
+          <textarea rows="4"  class="form-control" formControlName="comments_of_apso" value="Test comments"></textarea>
+   
+          </div>
+   
+        </div>
+   
+        </div>
+
+     <div formGroupName="weseeForm">
+       <div style="text-align:center;">
+        <mat-label class="subheading3"><b style="font-size:large;">DG WESEE  (Weapons and Electronics Systems Engineering Establishment)</b></mat-label>
+       </div>
+       <ng-container *ngIf="token_details.process_id==1 || token_details.process_id==3">
+        <form [formGroup]="this.allocateForm">
+        <div class="col-md-6">
+        <div class="matt-group matselect">
+          <mat-label>Select Tasking Groups <b class="star">*</b></mat-label>
+           <mat-form-field appearance="fill">
+          <mat-select formControlName="tasking_group" placeholder="Select Tasking Groups" [disabled]="token_details.process_id==1 || token_details.process_id==3">
+
+            <mat-option [value]="">Select Tasking Groups</mat-option>
+            <mat-option *ngFor="let taskingGroup of taskingGroups"
+            [value]="taskingGroup.id">{{taskingGroup.name}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+           
+          <!-- <mat-error *ngIf="Error('tasking_group','required')">Select Trial Groups</mat-error> -->
+
+        </div>
+        </div>
+<!-- 
+        <div class="row button-group-lg button-auto mt-4">
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-primary" [disabled]="token_detail.process_id==1" >Submit</button>
+        </div>
+
+      </div> -->
+      </form>
+        </ng-container>
+        
+       &nbsp;
+       <div class="alert alert-dismissible alert-bg">
+
+       <div class="mb-5 ">
+        <div class="row">
+          <div class="col-md-4">
+            <mat-label style="font-size:large;">Cost Implication (Approx)<b class="star">*</b></mat-label>
+
+
+            <!-- <mat-error *ngIf="weseeError('cost_implication','required')">Enter cost_implication</mat-error> -->
+            <div class="task-text-group">
+              <p>Rs&nbsp;&nbsp;</p>
+              <input type="text" class="form-control" formControlName="cost_implication" value="50000"/>
+              
+            </div>
+
+           <!-- <input type="text" class="form-control" formControlName="cost_implication" value="50000"/> -->
+           <!-- <mat-error *ngIf="weseeError('cost_implication','required') && showError">Enter cost_implication</mat-error> -->
+
+          </div>
+          <div class="col-md-4 ">
+            <mat-label style="font-size:large;">Time Frame For Completion<b class="star">*</b></mat-label>
+            <div class="task-text-group">
+              <p>Month's</p>
+              <input type="text" class="form-control" formControlName="time_frame_for_completion_month" value="10000" max_length="10"/>
+              
+              
+              
+            </div>
+                <!-- <input type="text" class="form-control" formControlName="time_frame_for_completion" value="200 hrs"/> -->
+                
+                <!-- <mat-error *ngIf="weseeError('time_frame_for_completion','required') && showError">Enter time_frame_for_completion</mat-error> -->
+            </div>
+            <div class="col-md-4 ">
+              <mat-label style="font-size:large;"><b>&nbsp;</b></mat-label>
+              <div class="task-text-group">
+                <p>Day's</p>
+              <input type="text" class="form-control" formControlName="time_frame_for_completion_days" value="10000" max_length="10"/>
+              &nbsp;&nbsp;
+              </div>
+                  <!-- <input type="text" class="form-control" formControlName="time_frame_for_completion_type" value="200 hrs"/> --> 
+                  <!-- <mat-error *ngIf="weseeError('time_frame_for_completion','required') && showError">Enter time_frame_for_completion</mat-error> -->
+              </div>
+
+
+
+        </div>
+          
+
+
+           
+       </div>
+       
+       <div class="mb-5 ">
+       <mat-label style="font-size:large;">Comments<b class="star">*</b></mat-label>
+
+         <textarea rows="4"  class="form-control" formControlName="comments_of_wesee" value="Test comments"></textarea>
+         <!-- <mat-error *ngIf="weseeError('comments_of_wesee','required') && showError">Enter comments_of_wesee</mat-error> -->
+
+         
+				  <div class="mb-5" >
+
+            <div class="matt-group">					
+              <mat-label style="font-size:large;">File  (Maximum 20MB Allowed)<b class="star">*</b></mat-label>
+						<a href="{{ImageUrl5}}" *ngIf="ImageUrl5!=''" class="edit-icon text-primary"
+						><span class="material-icons-outlined"><span class="bi bi-journal-check" style="color:blue" style="font-size:5rem"></span></span></a>
+					  
+					 
+
+						<a href="{{ImageUrl6}}" *ngIf="ImageUrl6!=''" class="edit-icon text-primary"
+				  ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="color:blue" style="font-size:5rem"></span></span></a>
+					</div>
+				</div>
+		
+
+     </div>
+
+     </div>
+     <!-- <div class="card-footer text-end">
+       <div class="col-md-12">
+     <button type="button" class="btn btn-success" *ngIf="api.userid.role_center[0].user_role.code=='WESEE'" (click)="Recommened()">Recommend</button>
+       &nbsp;
+       <button type="button" class="btn btn-danger" *ngIf="api.userid.role_center[0].user_role.code=='WESEE'" (click)="notRecommended()">Not Recommended</button>
+       </div>
+     </div> -->
+   </div>
+   <div formGroupName="deeForm">
+     <!-- </ng-container> -->
+     <!-- <ng-container *ngIf="api.userid.role_center[0].user_role.code=='DEE'"> -->
+    
+     <!-- <mat-label  style="text-align:center;"><b style="font-size:large;">DEE  (Directorate of Electrical Engineering)</b></mat-label> -->
+     <div class="alert alert-dismissible alert-bg">
+
+      <div class="sub-heading" style="text-align:center;">
+        <mat-label class="subheading3"><b style="font-size:large;">DEE  (Directorate of Electrical Engineering)</b></mat-label>
+    </div>
+
+     <div class="mb-5 ">
+       <mat-label style="font-size:large;">Task Number<b class="star">*</b></mat-label>
+        <!-- <div class="task-text-group">
+          <p>WESEE</p>
+          <input type="text" class="form-control" formControlName="task_number_dee" value="WESEE/001/2022/01" max_length="10"/>
+          <p>{{currentYear}}/{{currentDate1 | date:'dd'}}</p>
+        </div> -->
+        <div class="task-text-group">
+          <input type="text" class="form-control" formControlName="task_number_dee" value="WESEE/001/2022/01"/>
+        </div>
+         
+         <!-- <mat-error *ngIf="deeError('task_number_dee','required') && showError">Enter task_number_dee</mat-error> -->
+     </div>
+       <div class="mb-5 ">
+       <mat-label style="font-size:large;">Comments<b class="star">*</b></mat-label>
+       <textarea rows="4"  class="form-control" formControlName="comments_of_dee" value="Test comments"></textarea>
+
+     
+        <div class="mb-5" >						
+          <div class="matt-group">					
+            <mat-label style="font-size:large;">File  (Maximum 20MB Allowed)<b class="star">*</b></mat-label>					
+            <a href="{{ImageUrl7}}" *ngIf="ImageUrl7!=''" class="edit-icon text-primary"
+        ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="color:blue" style="font-size:5rem"></span></span></a>
+          
+            <a href="{{ImageUrl8}}" *ngIf="ImageUrl8!=''" class="edit-icon text-primary"
+        ><span class="material-icons-outlined"><span class="bi bi-journal-check" style="color:blue" style="font-size:5rem"></span></span></a>
+          </div>
+        </div>
+  
+
+       </div>
+
+
+       </div>
+
+   </div>
+   <div formGroupName="acomForm">
+   <!-- <ng-container *ngIf="api.userid.role_center[0].user_role.code=='ACOM'"> -->
+   
+       <!-- <mat-label  style="text-align:center;"><b style="font-size:large;">ACOM (IT & S)  (Asst.Chief of Materiel(Information Technology & Sys))</b></mat-label> -->
+       <div class="alert alert-dismissible alert-bg">
+
+        <div class="sub-heading" style="text-align:center;">
+          <mat-label class="subheading3"><b style="font-size:large;">ACOM (IT & S)  (Asst.Chief of Materiel(Information Technology & Sys))</b></mat-label>
+        </div>
+
+       <div class="mb-5 ">
+       <mat-label style="font-size:large;" >Comments<b class="star">*</b></mat-label>
+
+       <textarea rows="4"  class="form-control" formControlName="recommendation_of_acom_its" value="Test comments"></textarea>
+
+       </div>
+
+     </div>
+
+     </div>
+     <div formGroupName="comForm">
+   <!-- <ng-container *ngIf="api.userid.role_center[0].user_role.code=='APP'"> -->
+       <!-- <div class="mb-5 ">
+         <label for="floatingInput" class="form-label">Approval Of COM</label>
+
+           <input type="text" class="form-control" formControlName="approval" value="Approved"/>
+       </div> -->
+       
+       <!-- <mat-label style="text-align:center"><b style="font-size:large;">COM  (Chief of Materiel)</b></mat-label> -->
+       <div class="alert alert-dismissible alert-bg mb-0">
+
+        <div class="sub-heading" style="text-align:center;">
+          <mat-label class="subheading3"><b style="font-size:large;">COM  (Chief of Materiel)</b></mat-label>
+        </div>
+
+       <div class="mb-5 ">
+       <mat-label style="font-size:large;">Comments<b class="star">*</b></mat-label>
+       <textarea rows="4"  class="form-control" formControlName="approval_of_com" value="Test comments"></textarea>
+
+       </div>
+
+
+     </div>
+
+    </div>
+  </div>
+     <div class="row button-group-lg button-auto mt-4">
+              <div class="col-md-6 col-6">
+                 <!-- <button type="submit" class="btn btn-primary w-100" *ngIf="!isReadonly" >Save</button> -->
+              </div>
+              <div class="card-footer text-end">
+                 <button type="button" class="btn btn-primary" #closebutton data-dismiss="modal"(click)="cancelmodal()">Cancel</button>
+              </div>
+           </div>
+
+     <!-- <div class="card-footer text-end">
+       <div class="col-md-12">
+       <button type="submit" class="btn btn-primary" *ngIf="!isReadonly" >{{crudName}}</button>
+
+      </div>
+     </div> -->
+
+   </form>          </div>
+  </div>
+ </div>
+</div>
+
+<div class="modal fade master-modal-style" id="view-milestone" data-bs-keyboard="false" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">List of Milestone</h5>
+        <button type="button" (click)="closeview()" class="btn-close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="false">&times;</span>
+          </button>
+          </div>
+          <div class="col-md-12">
+            <div class="table-responsive">
+                  <table mat-table [dataSource]="dataSourcelist" class="table table-striped table-row-bordered gy-5 gs-7 border rounded" >
+                    <ng-container matColumnDef="milestone">
+                      <th mat-header-cell *matHeaderCellDef><b> Milestone </b></th>
+                      <td mat-cell *matCellDef="let milestone"> {{milestone.milestone}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="percentage_completion">
+                      <th mat-header-cell *matHeaderCellDef><b> Percentage Completion </b></th>
+                      <td mat-cell *matCellDef="let milestone"> {{milestone.percentage_completion}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="budget_utilized">
+                      <th mat-header-cell *matHeaderCellDef><b> Budget Utilised </b></th>
+                      <td mat-cell *matCellDef="let milestone"> {{milestone.budget_utilized}} </td>
+                    </ng-container>
+                    <ng-container matColumnDef="manpower">
+                      <th mat-header-cell *matHeaderCellDef><b> Manpower </b></th>
+                      <td mat-cell *matCellDef="let milestone"> {{milestone.manpower}} </td>
+                  </ng-container>
+                  <ng-container matColumnDef="task_start_date">
+                    <th mat-header-cell *matHeaderCellDef><b> Task Start Date </b></th>
+                    <td mat-cell *matCellDef="let milestone"> {{milestone.task_start_date}} </td>
+                </ng-container>
+                <ng-container matColumnDef="task_end_date">
+                  <th mat-header-cell *matHeaderCellDef><b> Task End Date </b></th>
+                  <td mat-cell *matCellDef="let milestone"> {{milestone.task_end_date}} </td>
+
+                  </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="displayedColumnsview"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumnsview;"></tr>
+
+                </table>
+            </div>
+          </div>
+       </div>
+   </div>
+
+
+</div>
